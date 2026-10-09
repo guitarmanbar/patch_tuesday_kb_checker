@@ -1,0 +1,14 @@
+patch_tuesday/
+├── patch.py              # Точка входа (REPL + batch)
+├── config.py             # Конфигурация
+├── db.py                 # SQLite: схема, кэш, запросы
+├── msrc_client.py        # Клиент MSRC CVRF API v3.0
+├── cvrf_parser.py        # Парсер CVRF-документов
+├── analyzer.py           # Логика анализа: CVE→KB, Host→KB
+├── excel_io.py           # Чтение/запись Excel
+├── eol_checker.py        # Проверка EOL-статуса продуктов
+├── repl.py               # REPL-интерфейс (cmd)
+├── data/
+│   ├── msrc_cache.db     # SQLite-кэш (создаётся автоматически)
+│   └── eol_products.json # Справочник EOL
+└── output/               # Результаты
